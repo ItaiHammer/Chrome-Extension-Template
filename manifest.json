@@ -1,7 +1,7 @@
 {
     "name": "Chrome Extension Template",
     "description": "description",
-    "version": "0.1",
+    "version": "1",
     "manifest_version": 2,
 
     "content_scripts": [
@@ -12,6 +12,10 @@
             "js": ["content.js"]
         }
     ],
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
     
     "background": [
         {
